@@ -15,7 +15,8 @@ add_executable(${BIN} ${EXE_SRC} )
 target_include_directories(${BIN} PRIVATE "${OCCT_INSTALL_DIR}/inc")
 
 set(OCCT_LIBS TKernel.lib TKMath.lib TKDESTEP.lib 
-	TKXSBase.lib TKShHealing.lib TKBRep.lib)
+	TKXSBase.lib TKShHealing.lib TKBRep.lib TKTopAlgo.lib TKG3d.lib TKG2d.lib 
+	TKGeomAlgo.lib TKGeomBase.lib TKMesh.lib)
 set(OCCT_DEBUG_LIBS "")
 set(OCCT_RELEASE_LIBS "")
 foreach(item IN LISTS OCCT_LIBS)
